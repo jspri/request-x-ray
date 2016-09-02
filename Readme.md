@@ -1,4 +1,5 @@
 # request-x-ray
+[![Build Status](https://travis-ci.org/Crazometer/request-x-ray.svg?branch=master)](https://travis-ci.org/Crazometer/request-x-ray)
 
 Simple [request](https://github.com/request/request) driver for [x-ray](https://github.com/lapwinglabs/x-ray). Useful for storing cookies, setting custom headers, and changing HTTP methods.
 
