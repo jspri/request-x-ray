@@ -25,7 +25,7 @@ const options = {
 
 const driver = makeDriver(options)
 
-const x = xray.driver(driver)
+const r = xray.driver(driver)
 
 r("http://www.google.com", "title")(function(err, res) {
 	console.log("Page retrieved with request!")
