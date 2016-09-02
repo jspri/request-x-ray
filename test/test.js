@@ -1,38 +1,42 @@
 var request = require('request')
-var xray = require('x-ray')()
+var Xray = require('x-ray')
 var makeDriver = require('../')
 var assert = require('assert')
 
 describe('Driver', function() {
 	describe('Arguments', function() {
 		it('Should work with no argument', function(done) {
+			var x = Xray()
 			var driver = makeDriver()
-			var r = xray.driver(driver)
+			x.driver(driver)
 
-			testInstance(r, done)
+			testInstance(x, done)
 		})
 
 		it('Should work with an object argument', function(done) {
+			var x = Xray()
 			var driver = makeDriver({})
-			var r = xray.driver(driver)
+			x.driver(driver)
 
-			testInstance(r, done)
+			testInstance(x, done)
 		})
 
 		it('Should work with a function argument', function(done) {
+			var x = Xray()
 			var driver = makeDriver(request.defaults({method:"POST"}))
-			var r = xray.driver(driver)
+			x.driver(driver)
 
-			testInstance(r, done)
+			testInstance(x, done)
 		})
 	})
 
 	describe('Errors', function() {
 		it('Should pass on errors', function(done) {
+			var x = Xray()
 			var driver = makeDriver()
-			var r = xray.driver(driver)
+			x.driver(driver)
 
-			testInstance(r, "http://NotARealUrl.com", function(err, res) {
+			testInstance(x, "http://NotARealUrl.com", function(err, res) {
 				assert(err)
 				done()
 			})
@@ -43,7 +47,7 @@ describe('Driver', function() {
 function testInstance(r, url, callback) {
 	if(!callback) {
 		callback = url
-		url = "https://github.com/"
+		url = "https://news.ycombinator.com"
 	}
 
 	r(url, 'title')(callback)

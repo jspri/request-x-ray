@@ -12,7 +12,7 @@ npm install x-ray
 ## Usage
 
 ```js
-const xray = require('x-ray')()
+const x = require('x-ray')()
 const makeDriver = require('request-x-ray')
 
 const options = {
@@ -23,11 +23,11 @@ const options = {
 	}
 }
 
-const driver = makeDriver(options)
+const driver = makeDriver(options)		//Create driver
 
-const r = xray.driver(driver)
+x.driver(driver)						//Set driver to request
 
-r("http://www.google.com", "title")(function(err, res) {
+x("http://www.google.com", "title")(function(err, res) {
 	console.log("Page retrieved with request!")
 })
 ```
