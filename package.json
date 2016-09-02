@@ -1,0 +1,17 @@
+{
+  "name": "request-x-ray",
+  "version": "0.1.0",
+  "description": "request driver for x-ray",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Justin Sprigg",
+    "email": "justin.sprigg@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.74.0"
+  }
+}
