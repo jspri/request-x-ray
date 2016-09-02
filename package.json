@@ -11,6 +11,9 @@
   "dependencies": {
     "request": "^2.74.0"
   },
+  "peerDependencies": {
+    "x-ray-crawler": "^2.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Crazometer/request-x-ray.git"
