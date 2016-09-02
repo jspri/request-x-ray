@@ -1,10 +1,10 @@
 # request-x-ray
 
-Simple [request](https://github.com/request/request) driver for [x-ray](https://github.com/lapwinglabs/x-ray). Useful for storing cookies, setting custom headers and changing HTTP method.
+Simple [request](https://github.com/request/request) driver for [x-ray](https://github.com/lapwinglabs/x-ray). Useful for storing cookies, setting custom headers, and changing HTTP methods.
 
 ## Installation
 
-```js
+```
 npm install x-ray
 ```
 
@@ -34,7 +34,7 @@ r("http://www.google.com", "title")(function(err, res) {
 
 ### makeDriver([opts|fn])
 
-Creates a driver to be used by `xray.driver()`. Possible arguments are a request [options object](https://github.com/request/request#requestoptions-callback) or a `request` instance, for example `request.defaults()` or `request.post()` e.t.c
+Creates a driver to be used by `xray.driver()`. Possible arguments are a request [options object](https://github.com/request/request#requestoptions-callback) or a `request` instance e.g. `request.defaults()`.
 
 ## License
 
