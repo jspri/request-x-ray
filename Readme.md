@@ -25,7 +25,7 @@ const options = {
 
 const driver = makeDriver(options)		//Create driver
 
-x.driver(driver)						//Set driver to request
+x.driver(driver)						//Set driver
 
 x("http://www.google.com", "title")(function(err, res) {
 	console.log("Page retrieved with request!")
