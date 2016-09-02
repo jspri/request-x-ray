@@ -18,6 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/Crazometer/request-x-ray.git"
   },
+  "engines": {
+    "node": ">= 0.10"
+  },
   "keywords": [
     "x-ray",
     "driver",
