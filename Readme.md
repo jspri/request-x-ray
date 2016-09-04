@@ -6,7 +6,7 @@ Simple [request](https://github.com/request/request) driver for [x-ray](https://
 ## Installation
 
 ```
-npm install x-ray
+npm install request-x-ray
 ```
 
 ## Usage

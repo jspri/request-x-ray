@@ -1,6 +1,6 @@
 {
   "name": "request-x-ray",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simple request driver for x-ray",
   "main": "index.js",
   "scripts": {
